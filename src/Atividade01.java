@@ -16,6 +16,18 @@ public class Atividade01 {
             if (numeros[i] > maior) {
                 maior = numeros[i];
             }
+
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Digite 1 número: ");
+            numeros[i] = ler.nextInt();
+
+
+
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+
         }
         System.out.println("O maior número é: " + maior);
         System.out.println(maior);
