@@ -13,7 +13,7 @@ public class Atividade02 {
         }
 
 
-        System.out.println("Números gerados: ");
+        System.out.println("Números: ");
         for (int n : numeros) {
             System.out.print(n + " ");
         }
