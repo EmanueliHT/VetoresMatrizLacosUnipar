@@ -21,7 +21,7 @@ public class Atividade09 {
                 System.out.println("Aluno " + (linha + 1) + ": " + medias[linha]);
             }
 
-            sc.close();
+
         }
     }
 
