@@ -1,17 +1,23 @@
-import java.util.Scanner;
-
 public class Atividade06 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int [][] matriz = new int [5][5];
-        System.out.println("Digite os elementos da matriz: ");
+        int[][] matriz = new int[5][5];
+
         for (int linha = 0; linha < 5; linha++) {
             for (int coluna = 0; coluna < 5; coluna++) {
-                System.out.println("Elemento " + linha+ "["+coluna+"]");
-                matriz[linha][coluna] = sc.nextInt();
+                if (linha == coluna) {
+                    matriz[linha][coluna] = 1;
+                } else {
+                    matriz[linha][coluna] = 0;
+                }
             }
         }
 
-
+        System.out.println("Matriz Identidade 5x5:");
+        for (int linha = 0; linha < 5; linha++) {
+            for (int coluna = 0; coluna < 5; coluna++) {
+                System.out.print(matriz[linha][coluna] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
